@@ -1,18 +1,407 @@
-  {
-    "id": 2,
-    "firstName": "Marcelo",
-    "lastName": "Andrade",
-    "email": "marcelohenrique.dea@dhl.com",
-    "phone": null,
-    "status": 1,
-    "nextPasswordChange": "2022-06-04T15:47:15.2685886",
-    "roles": [],
-    "operations": [
-      {
-        "operation": {
-          "id": 7,
-          "name": "CE"
+{
+  "managers": [
+    {
+      "id": 1,
+      "name": "Airá Simões",
+      "email": "aira.simoes@dhl.com",
+      "phone": "11 94517-5080"
+    },
+    {
+      "id": 2,
+      "name": "Rodrigo Cysneiros",
+      "email": "rodrigo.cysneiros@dhl.com",
+      "phone": "84 99986-7631"
+    }
+  ],
+  "ticketevents": [
+    {
+      "id": 0,
+      "eventname": "Abertura Chamado",
+      "color": "yellow-8",
+      "icon": "verified"
+    }
+  ],
+  "errortypebyapp": [
+    {
+      "id": 1,
+      "application": "Wave Planner",
+      "errors": [
+        {
+          "id": 1,
+          "name": "Erro no arquivo"
         }
-      }
-    ]
-  }
+      ]
+    }
+  ],
+  "Applications": [
+    {
+      "id": 1,
+      "name": "Wave Planner",
+      "callbackUrl": "http://wave2.smartmia.com.br/"
+    },
+    {
+      "id": 2,
+      "name": "Data Ingestion",
+      "callbackUrl": "http://di.smartmia.com.br/"
+    },
+    {
+      "id": 3,
+      "name": "Ferramenta XD",
+      "callbackUrl": "http://xd.smartmia.com.br/"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "Facily",
+      "site": "https://faci.ly/",
+      "logo": "https://storage.googleapis.com/facily-images/b7ce7e5a-feijao-preto-1-kg-0-1635810857.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Nike",
+      "site": "https://nike.com.br/",
+      "logo": ""
+    },
+    {
+      "id": 5,
+      "name": "Leroy Merlin",
+      "site": "https://www.leroymerlin.com.br/",
+      "logo": ""
+    },
+    {
+      "id": 6,
+      "name": "Teste",
+      "site": "https://test.it",
+      "logo": ""
+    },
+    {
+      "id": 7,
+      "name": "Teste2",
+      "site": "dasdsadasasd",
+      "logo": ""
+    }
+  ],
+  "Tickets": [
+    {
+      "id": 1,
+      "ticketid": "MIA0002",
+      "tickettype": "Incident",
+      "openedby": "Marcelo Andrade",
+      "email": "marcelohenrique.dea@dhl.com",
+      "operation": [
+        {
+          "label": "SP Itaqua 01",
+          "value": 1
+        }
+      ],
+      "tcktDesc": "",
+      "Application": "Wave Planner",
+      "Problemtkid": "",
+      "Problemcoord": "André Lemes",
+      "Problemexec": "Marcelo Andrade",
+      "Problemtest": "Marcelo Andrade",
+      "Changedate": "",
+      "Changeapprovers": [
+        {
+          "email": "",
+          "name": "",
+          "isApproved": ""
+        }
+      ],
+      "errortype": "Erro no Arquivo",
+      "client": "Facily",
+      "priority": "Normal",
+      "openedDate": "2022-04-23T14:20:16.5727065",
+      "closedDate": "2022-04-25T18:20:16.5727065",
+      "ticketstatus": "Respondido",
+      "ticketSla": "3:20",
+      "attachments": [
+        {
+          "id": 1,
+          "name": "Photo.png",
+          "path": "https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80",
+          "icon": "image"
+        },
+        {
+          "id": 1,
+          "name": "File.xls",
+          "path": "#",
+          "icon": "insert_drive_file"
+        }
+      ],
+      "events": [
+        {
+          "id": 0,
+          "eventname": "Abertura Chamado",
+          "eventdtl": "",
+          "eventdate": "2022-04-23T14:20:16.5727065",
+          "color": "yellow-8",
+          "icon": "verified"
+        },
+        {
+          "id": 0,
+          "eventname": "Abertura Chamado",
+          "eventdtl": "",
+          "eventdate": "2022-04-23T14:20:16.5727065",
+          "color": "purple-6",
+          "icon": "find_in_page"
+        },
+        {
+          "id": 1,
+          "eventname": "Descrição Chamado",
+          "eventdtl": "A aplicação estava com erro, retornando status 500, mostrando pro Airá",
+          "eventdate": "2022-04-23T14:20:16.5727065",
+          "color": "blue",
+          "icon": "description"
+        },
+        {
+          "id": 2,
+          "eventname": "Resposta Usuário",
+          "eventdtl": "Test User Response",
+          "eventdate": "2022-04-23T14:26:16.5727065",
+          "color": "blue",
+          "icon": "edit"
+        },
+        {
+          "id": 3,
+          "eventname": "Tratativa Suporte",
+          "eventdtl": "Test Support Response",
+          "eventdate": "2022-04-23T14:23:16.5727065",
+          "color": "green",
+          "icon": "check"
+        },
+        {
+          "id": 3,
+          "eventname": "Comentário adicionado",
+          "eventdtl": "Lorem Ipsum",
+          "eventdate": "2022-04-23T14:23:16.5727065",
+          "color": "green",
+          "icon": "check"
+        },
+        {
+          "id": 3,
+          "eventname": "Solicitação reaberta",
+          "eventdtl": "Chamado foi finalizado mas solução nao foi satisfatoria",
+          "eventdate": "2022-05-03T14:23:16.5727065",
+          "color": "primary",
+          "icon": "error_outline"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "ticketid": "MIA0002",
+      "tickettype": "Problem",
+      "openedby": "Marcelo Andrade",
+      "email": "marcelohenrique.dea@dhl.com",
+      "tcktDesc": "",
+      "operation": [
+        {
+          "label": "SP Itaqua 01",
+          "value": 1
+        }
+      ],
+      "Application": "Wave Planner",
+      "Problemtkid": "",
+      "Problemcoord": "André Lemes",
+      "Problemexec": "Marcelo Andrade",
+      "Problemtest": "Marcelo Andrade",
+      "Changedate": "",
+      "Changeapprovers": [
+        {
+          "email": "",
+          "name": "",
+          "isApproved": ""
+        }
+      ],
+      "errortype": "Erro no Arquivo",
+      "client": "Facily",
+      "priority": "Normal",
+      "openedDate": "2022-04-23T14:20:16.5727065",
+      "closedDate": "2022-04-25T18:20:16.5727065",
+      "ticketstatus": "Respondido",
+      "ticketSla": "3:20",
+      "attachments": [
+        {
+          "id": 1,
+          "name": "File.png",
+          "path": "https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80",
+          "icon": "image"
+        },
+        {
+          "id": 1,
+          "name": "File.xls",
+          "path": "https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80",
+          "icon": "insert_drive_file"
+        }
+      ],
+      "events": [
+        {
+          "id": 0,
+          "eventname": "Abertura Chamado",
+          "eventdtl": "",
+          "eventdate": "2022-04-23T14:20:16.5727065",
+          "color": "yellow-8",
+          "icon": "verified"
+        },
+        {
+          "id": 0,
+          "eventname": "Abertura Chamado teste aira",
+          "eventdtl": "asdasdasdasdasdas",
+          "eventdate": "2022-04-23T14:20:16.5727065",
+          "color": "yellow-8",
+          "icon": "verified"
+        },
+        {
+          "id": 1,
+          "eventname": "Descrição Chamado",
+          "eventdtl": "A aplicação estava com erro, retornando status 500, mostrando pro Airá",
+          "eventdate": "2022-04-23T14:20:16.5727065",
+          "color": "blue",
+          "icon": "description"
+        },
+        {
+          "id": 2,
+          "eventname": "Resposta Usuário",
+          "eventdtl": "Test User Response",
+          "eventdate": "2022-04-23T14:26:16.5727065",
+          "color": "blue",
+          "icon": "edit"
+        },
+        {
+          "id": 3,
+          "eventname": "Tratativa Suporte",
+          "eventdtl": "Test Support Response",
+          "eventdate": "2022-04-23T14:23:16.5727065",
+          "color": "green",
+          "icon": "check"
+        },
+        {
+          "id": 3,
+          "eventname": "Comentário adicionado",
+          "eventdtl": "Lorem Ipsum",
+          "eventdate": "2022-04-23T14:23:16.5727065",
+          "color": "green",
+          "icon": "check"
+        },
+        {
+          "id": 3,
+          "eventname": "Solicitação reaberta",
+          "eventdtl": "Chamado foi finalizado mas solução nao foi satisfatoria",
+          "eventdate": "2022-05-03T14:23:16.5727065",
+          "color": "primary",
+          "icon": "error_outline"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "ticketid": "MIA0003",
+      "tickettype": "Change",
+      "openedby": "Marcelo Andrade",
+      "email": "marcelohenrique.dea@dhl.com",
+      "operation": [
+        {
+          "label": "SP Itaqua 01",
+          "value": 1
+        }
+      ],
+      "Application": "Wave Planner",
+      "Problemtkid": "",
+      "tcktDesc": "",
+      "Problemcoord": "",
+      "Problemexec": "",
+      "Problemtest": "",
+      "Changedate": "2022-05-03T14:00:00.5727065",
+      "Changeapprovers": [
+        {
+          "email": "andre.lemes@dhl.com",
+          "name": "André Lemes",
+          "isApproved": "Pendente"
+        },
+        {
+          "email": "marcelohenrique.dea@dhl.com",
+          "name": "Marcelo Andrade",
+          "isApproved": "Recusado"
+        },
+        {
+          "email": "aira.simoes@dhl.com",
+          "name": "Airá Simões",
+          "isApproved": "Aprovado"
+        }
+      ],
+      "errortype": "Erro no Arquivo",
+      "client": "Facily",
+      "priority": "Normal",
+      "openedDate": "2022-04-23T14:20:16.5727065",
+      "closedDate": "2022-04-25T18:20:16.5727065",
+      "ticketstatus": "Respondido",
+      "ticketSla": "3:20",
+      "attachments": [
+        {
+          "id": 1,
+          "name": "File.png",
+          "path": "https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80",
+          "icon": "image"
+        },
+        {
+          "id": 1,
+          "name": "File.xls",
+          "path": "https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80",
+          "icon": "insert_drive_file"
+        }
+      ],
+      "events": [
+        {
+          "id": 0,
+          "eventname": "Abertura Chamado",
+          "eventdtl": "",
+          "eventdate": "2022-04-23T14:20:16.5727065",
+          "color": "yellow-8",
+          "icon": "verified"
+        },
+        {
+          "id": 1,
+          "eventname": "Descrição Chamado",
+          "eventdtl": "A aplicação estava com erro, retornando status 500, mostrando pro Airá",
+          "eventdate": "2022-04-23T14:20:16.5727065",
+          "color": "blue",
+          "icon": "description"
+        },
+        {
+          "id": 2,
+          "eventname": "Resposta Usuário",
+          "eventdtl": "Test User Response",
+          "eventdate": "2022-04-23T14:26:16.5727065",
+          "color": "blue",
+          "icon": "edit"
+        },
+        {
+          "id": 3,
+          "eventname": "Tratativa Suporte",
+          "eventdtl": "Test Support Response",
+          "eventdate": "2022-04-23T14:23:16.5727065",
+          "color": "green",
+          "icon": "check"
+        },
+        {
+          "id": 3,
+          "eventname": "Comentário adicionado",
+          "eventdtl": "Lorem Ipsum",
+          "eventdate": "2022-04-23T14:23:16.5727065",
+          "color": "green",
+          "icon": "check"
+        },
+        {
+          "id": 3,
+          "eventname": "Solicitação reaberta",
+          "eventdtl": "Chamado foi finalizado mas solução nao foi satisfatoria",
+          "eventdate": "2022-05-03T14:23:16.5727065",
+          "color": "primary",
+          "icon": "error_outline"
+        }
+      ]
+    }
+  ]
+}
